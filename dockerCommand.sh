@@ -8,4 +8,4 @@ docker run -d --rm --name mongo -p 27017:27017 -v mongobdata:/data/db \
 
 docker run -it --rm -p 8080:80 --name catalog \
     -e MongoDbSettings:Host=mongo -e MongoDbSettings:Password=Pass \
-    --network=net5tutorial mrfizban/catalog:v1
+    --network=net5tutorial mrfizban/catalog:v1 
